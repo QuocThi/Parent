@@ -1,0 +1,13 @@
+name: "On Issue Opened"
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  run:
+    name: Run Bot
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          github-token: "${{ secrets.PULIC_TOKEN }}"

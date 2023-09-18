@@ -1,0 +1,8 @@
+name: "Testing"
+description: "create reposository on issue"
+inputs:
+  github-token:
+    description: "Github token"
+    required: true
+runs: |
+  echo "CALL ACTION.YML"
