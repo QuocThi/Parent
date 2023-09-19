@@ -12,3 +12,4 @@ jobs:
       - uses: ./
         with:
           github-token: "${{ secrets.PULIC_TOKEN }}"
+          repo-name: "${{ github.event.issue.title }}"
